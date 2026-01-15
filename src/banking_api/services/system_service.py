@@ -17,6 +17,7 @@ class SystemService:
             # 1. Charger les transactions
             transactions_path = "data/transactions_data.csv"
             df_tx = pd.read_csv(transactions_path)
+        
 
             # 2. Charger les labels de fraude (JSON)
             labels_path = "data/train_fraud_labels.json"

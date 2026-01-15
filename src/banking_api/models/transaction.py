@@ -1,27 +1,17 @@
 from pydantic import BaseModel
-from typing import List
+from typing import Optional, Any
 
 class Transaction(BaseModel):
-    """
-    Modèle représentant une transaction bancaire (Format NumPyDoc).
-    """
-    step: int
-    type: str
-    amount: float
-    nameOrig: str
-    oldbalanceOrg: float
-    newbalanceOrig: float
-    nameDest: str
-    oldbalanceDest: float
-    newbalanceDest: float
-    isFraud: int
-    isFlaggedFraud: int
-
-class TransactionPaginated(BaseModel):
-    """
-    Modèle pour la réponse paginée de la Route 1.
-    """
-    page: int
-    limit: int
-    total_results: int
-    transactions: List[Transaction]
+    id: int
+    date: str
+    client_id: int
+    card_id: int
+    amount: Any  # Accepte le format "$-77.00"
+    use_chip: str
+    merchant_id: int
+    merchant_city: str
+    merchant_state: Optional[str] = None
+    zip: Optional[float] = None
+    mcc: int
+    errors: Optional[int] = 0
+    isFraud: Optional[int] = 0 # Ajouté par ta fusion de données
