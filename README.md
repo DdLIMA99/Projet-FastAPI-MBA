@@ -37,17 +37,17 @@ Une fois le serveur lancé, vous pouvez consulter la documentation interactive S
 
 Voici les routes principales à tester :
 
-Santé du système : GET /api/system/health
+Santé du système : `GET /api/system/health`
 
-Liste des Transactions : GET /api/transactions
+Liste des Transactions : `GET /api/transactions`
 
-Détails d'une Transaction : GET /api/transactions/{tx_id}
+Détails d'une Transaction : `GET /api/transactions/{tx_id}`
 
-Résumé de la Fraude : GET /api/fraud/summary
+Résumé de la Fraude : `GET /api/fraud/summary`
 
-Statistiques Client : GET /api/customers/{client_id}/stats
+Statistiques Client : `GET /api/customers/{client_id}/stats`
 
-📊 Performance & Validation
+## 📊 Performance & Validation
 Volume : 13 305 915 lignes traitées avec succès.
 
 Optimisation : Temps de réponse rapide grâce au pré-chargement en mémoire (Singleton Pattern).
