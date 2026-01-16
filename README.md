@@ -26,31 +26,30 @@ L'application respecte une architecture modulaire découpée en **5 services sp�
 * Python 3.10+
 * Dossier `data/` contenant : `transactions_data.csv` et `train_fraud_labels.json`.
 
-### 2. Installation des dépendances
-```bash
-pip install fastapi uvicorn pandas
-3. Démarrage de l'API
-Bash
+2. Installation des dépendances
+Exécutez la commande suivante pour installer les bibliothèques nécessaires : pip install fastapi uvicorn pandas
 
-uvicorn src.banking_api.main:app --reload
+3. Démarrage de l'API
+Lancez le serveur avec cette commande : uvicorn src.banking_api.main:app --reload
+
 🛠️ Points d'entrée principaux (Endpoints)
-Accédez à la documentation interactive (Swagger UI) sur : http://127.0.0.1:8000/docs.
+Une fois le serveur lancé, vous pouvez consulter la documentation interactive Swagger UI à l'adresse suivante : http://127.0.0.1:8000/docs
+
+Voici les routes principales à tester :
 
 Santé du système : GET /api/system/health
 
-Transactions : GET /api/transactions?page=1&limit=10
+Liste des Transactions : GET /api/transactions
 
-Détails Transaction : GET /api/transactions/{tx_id}
+Détails d'une Transaction : GET /api/transactions/{tx_id}
 
-Résumé Fraude : GET /api/fraud/summary
+Résumé de la Fraude : GET /api/fraud/summary
 
-Stats Client : GET /api/customers/{client_id}/stats
+Statistiques Client : GET /api/customers/{client_id}/stats
 
 📊 Performance & Validation
-Volume de données : 13 305 915 lignes traitées.
+Volume : 13 305 915 lignes traitées avec succès.
 
-Optimisation : Temps de réponse ultra-rapide grâce au pré-chargement en mémoire (Singleton Pattern).
+Optimisation : Temps de réponse rapide grâce au pré-chargement en mémoire (Singleton Pattern).
 
-Fiabilité : Gestion robuste des valeurs manquantes (NaN) et correction de la sérialisation JSON pour les colonnes complexes comme zip.
-
-Sécurité : Intégration réussie des labels de fraude convertis en indicateurs numériques.
+Fiabilité : Correction de la sérialisation JSON pour les données manquantes (NaN), notamment sur la colonne zip.
