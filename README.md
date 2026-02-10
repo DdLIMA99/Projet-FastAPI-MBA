@@ -10,11 +10,11 @@ Le projet intègre une **fusion de données dynamique** entre des transactions b
 ## 🏗️ Architecture & Bonus (4 Points Validés)
 Ce projet respecte les exigences de mise en conformité technique suivantes :
 
-1.  **Swagger UI** : Documentation interactive intégrée (Point Bonus 1).
-2.  **Streamlit (PROJET EXTERNE)** : Interface métier séparée pour le monitoring (Point Bonus 2).
+1.  **Swagger UI** : Documentation interactive intégrée .
+2.  **Streamlit (PROJET EXTERNE)** : Interface métier séparée pour le monitoring .
     * Lien du dépôt séparé : https://github.com/DdLIMA99/Projet-Streamlit-Banking
-3.  **CI/CD (GitHub Actions)** : Pipeline automatisé de vérification du code (Point Bonus 3).
-4.  **Docker** : Conteneurisation complète de l'API (Point Bonus 4).
+3.  **CI/CD (GitHub Actions)** : Pipeline automatisé de vérification du code .
+4.  **Docker** : Conteneurisation complète de l'API .
 
 ---
 
