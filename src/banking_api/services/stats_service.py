@@ -3,7 +3,7 @@ from typing import Dict, Any
 
 class StatsService:
     @staticmethod
-    def get_overview(df: pd.DataFrame) -> Dict[str, Any]:
+def get_overview(df: pd.DataFrame) -> Dict[str, Any]:
         """Route 9 : Statistiques globales avec la vraie colonne isFraud."""
         total_tx = len(df)
         fraud_count = int(df['isFraud'].sum())
@@ -18,7 +18,7 @@ class StatsService:
              
         avg_amount = float(amounts.mean())
 
-        return {
+    return {
             "total_transactions": total_tx,
             "fraud_count": fraud_count,
             "fraud_rate": round(fraud_rate, 6),
