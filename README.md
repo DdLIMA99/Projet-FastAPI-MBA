@@ -1,5 +1,10 @@
 # 🏦 Banking Transactions API - MBA ESG
 
+## 👥 L'Équipe (Groupe)
+Ce projet a été réalisé en binôme par :
+* **Kodzo LIMA**
+* **Cecile EONE**
+
 ## 📝 Présentation du Projet
 Cette API industrielle a été développée pour traiter et analyser un volume massif de transactions bancaires (**+13 millions de lignes**, ~1.2 Go) avec une latence de réponse optimisée.
 
@@ -7,7 +12,7 @@ Le projet intègre une **fusion de données dynamique** entre des transactions b
 
 ---
 
-## 🏗️ Architecture & Bonus (4 Points Validés)
+## 🏗️ Architecture & Bonus 
 Ce projet respecte les exigences de mise en conformité technique suivantes :
 
 1.  **Swagger UI** : Documentation interactive intégrée .
