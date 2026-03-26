@@ -33,8 +33,9 @@ pip install -e ".[dev]"
 
 ```bash
 # Placer le CSV dans data/
+TRANSACTIONS_CSV_PATH=data/transactions_data.csv
 # Puis :
-TRANSACTIONS_CSV_PATH=data/transactions_data.csv uvicorn banking_api.main:app --reload
+uvicorn banking_api.main:app --reload
 ```
 
 L'API est disponible sur `http://localhost:8000`  
